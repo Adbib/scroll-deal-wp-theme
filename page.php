@@ -18,6 +18,9 @@ get_header();
 	<main id="primary" class="site-main">
 
 		<?php
+		if ( is_home() && ! is_front_page() ) :
+				et_template_part( 'template-parts/content', "home" );
+		else:
 		while ( have_posts() ) :
 			the_post();
 
@@ -29,10 +32,11 @@ get_header();
 			endif;
 
 		endwhile; // End of the loop.
+	endif;
 		?>
 
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();

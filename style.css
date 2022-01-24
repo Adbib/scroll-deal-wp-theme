@@ -79,6 +79,7 @@ html {
  */
 body {
 	margin: 0;
+	background: ddd !important;
 }
 
 /**
@@ -472,7 +473,7 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-	background: #fff;
+	background: #efefef;
 }
 
 hr {
